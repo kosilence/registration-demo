@@ -1,5 +1,7 @@
 # Registration Demo
 
+[![Build Status](https://travis-ci.org/kosilence/registration-demo.svg?branch=master)](https://travis-ci.org/kosilence/registration-demo) [![codecov](https://codecov.io/gh/kosilence/registration-demo/branch/master/graph/badge.svg)](https://codecov.io/gh/kosilence/registration-demo)
+
 This registration demo is for learning how to write a React application.
 
 The demo is created by [Create React App](https://github.com/facebookincubator/create-react-app), and developed with [React](https://reactjs.org/), [Redux](https://redux.js.org/), [Jest](https://facebook.github.io/jest/) and [enzyme](https://github.com/airbnb/enzyme).
