@@ -4,10 +4,10 @@ This registration demo is for learning how to write a React application.
 
 The demo is created by [Create React App](https://github.com/facebookincubator/create-react-app), and developed with [React](https://reactjs.org/), [Redux](https://redux.js.org/), [Jest](https://facebook.github.io/jest/) and [enzyme](https://github.com/airbnb/enzyme).
 
-## Initial Product
+## Initial Project
 
 1. `git clone`  Clone the repo to local.
-2. `cd ./registration-demo`  Enter product's root directory.
+2. `cd ./registration-demo`  Enter project root directory.
 3. `yarn install`  We use [yarn](https://yarnpkg.com) to manage our packages, if command not be found, install yarn first.
 4. `npm start`  Run the application in the development mode.
 
@@ -28,17 +28,17 @@ my-app/
  package-lock.json
  package.json
  yarn.lock
-   public/
-     index.html
-     favicon.ico
-   src/
-   actions/
-   components/
-   containers/
-   reducers/
-     index.css
-     index.js
-     setupTests.js
+ public/
+  index.html
+  favicon.ico
+ src/
+  actions/
+  components/
+  containers/
+  reducers/
+  index.css
+  index.js
+  setupTests.js
 ```
 
 - `actions/` This folder includes the definitions of store's actions and actionCreators.
