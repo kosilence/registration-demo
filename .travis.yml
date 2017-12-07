@@ -1,12 +1,14 @@
-language: javascript
+language: node_js
+node_js:
+  - 8
 install:
   - npm install -g codecov
   - npm install
 script:
   - npm build
   - npm run cover
-  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
-  - codecov --token=:da7c729d-056f-42fe-8932-36e4f271e70d
+  - ls
+  - codecov
 
 
 
