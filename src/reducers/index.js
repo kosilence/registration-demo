@@ -61,40 +61,7 @@ function handleInputBlur(state, action) {
 }
 
 function handleFormReset(state, action) {
-  let initialState = {
-    formData: [
-      {
-        value: "",
-        name: "username",
-        type: "text",
-        label: "User Name",
-        error: ""
-      },
-      {
-        value: "",
-        name: "password",
-        type: "password",
-        label: "Password",
-        error: ""
-      },
-      {
-        value: "",
-        name: "confirmPassword",
-        type: "password",
-        label: "Confirm Password",
-        error: ""
-      },
-      {
-        value: "",
-        name: "phoneNumber",
-        type: "text",
-        label: "Phone Number",
-        error: ""
-      }
-    ],
-    isShowFormData: false
-  };
-  return initialState;
+  return { ...initialState };
 }
 
 function handleFormSubmit(state, action) {
@@ -112,7 +79,7 @@ function handleFormSubmit(state, action) {
 }
 
 // ****************************************
-// 工具类函数
+// Tool functions
 // ****************************************
 
 function formValidater(name, value, formData) {
@@ -154,7 +121,7 @@ function formValidater(name, value, formData) {
   }
 }
 
-export default (state = initialState, action) => {
+export default (state = { ...initialState }, action) => {
   switch (action.type) {
     case types.CHANGE_INPUT_VALUE:
       return handleInputValueChange(state, action);
